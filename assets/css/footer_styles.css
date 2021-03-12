@@ -1,0 +1,25 @@
+.main-footer{
+  background-color: rgb(60,61,65);
+  margin-top: 20px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-social-list{
+  display: flex;
+}
+
+.footer-social-list-item + .footer-social-list-item{
+  margin-left: 10px;
+}
+
+.write-letter a{
+  text-decoration: none;
+  color: white;
+}

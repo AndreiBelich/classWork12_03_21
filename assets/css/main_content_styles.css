@@ -1,0 +1,79 @@
+.main-content{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+section{
+  border: 1px solid crimson;
+}
+
+article + article{
+  margin-top: 50px;
+}
+
+.season-image-wrapper{
+  border: 1px solid orange;
+}
+
+.article-image{
+  /*object-fit: cover;*/
+  width: 100%;
+}
+  
+
+.category-style{
+  color: orange;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.season-title{
+  color: rgb(22, 22, 22);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", serif;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.content-paragraph{
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.content-paragraph + .content-paragraph{
+  margin-top: 10px;
+}
+
+.article-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 5px 0;
+}
+
+.read-more{
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(60,61,65);
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  clip-path: polygon(0% 0%, 89% 0, 100% 50%, 90% 100%, 0% 100%);
+}
+
+.social-icon-list{
+  display: flex;
+}
+
+
+/*Aside*/
+aside{
+  border: 1px solid teal;
+  flex-basis: 80%;
+  margin-left: 50px;
+}

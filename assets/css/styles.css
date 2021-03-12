@@ -1,5 +1,16 @@
-@import url("./header-styles.css");
+@import url("./header_styles.css");
+@import url("./main_content_styles.css");
+@import url("./footer_styles.css");
+
 *{
   box-sizing: border-box;
 }
 
+body{
+  font-family: "Arial", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
