@@ -1,6 +1,7 @@
 @import url("./header_styles.css");
 @import url("./main_content_styles.css");
 @import url("./footer_styles.css");
+@import url("./aside.css");
 
 *{
   box-sizing: border-box;

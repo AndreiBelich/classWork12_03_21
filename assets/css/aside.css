@@ -1,0 +1,27 @@
+.sidebar-article-title{
+  text-align: center;
+  border: 1px solid orange;
+  padding: 20px 0;
+}
+.counter{
+  color: lightgrey;
+}
+
+.category-list-item{
+  margin-left: 15px;
+  position: relative;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.category-list-item + .category-list-item{
+  border-top: 1px solid lightgrey;
+}
+
+.category-list-item::before{
+  content: ">";
+  color: lightgrey;
+  position: absolute;
+  left: -12px;
+}
+
