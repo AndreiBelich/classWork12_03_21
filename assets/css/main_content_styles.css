@@ -1,24 +1,33 @@
-.main-content{
-  display: flex;
-  margin-top: 15px;
-  justify-content: space-between;
+.main-content-wrapper{
+  background-color: #F7F7F7;
 }
 
-section{
-  border: 1px solid crimson;
+.main-content{
+  display: flex;
+  margin-top: 9px;
+  justify-content: space-between;
+  min-height: 75vh;
+}
+
+.articles{
+  /*flex-basis: 830px; ? Почему это не работает*/
+  max-width: 830px;
+  overflow: hidden;
+  /*flex-grow: 1;*/
 }
 
 article + article{
   margin-top: 50px;
 }
 
-.season-image-wrapper{
+/*.season-image-wrapper{
   border: 1px solid orange;
-}
+}*/
 
 .article-image{
   /*object-fit: cover;*/
-  width: 100%;
+  /*width: 100%;*/
+  width: 830px;
 }
   
 
@@ -74,6 +83,7 @@ article + article{
 /*Aside*/
 aside{
   border: 1px solid teal;
-  flex-basis: 80%;
+  /*flex-basis: 80%;*/
   margin-left: 50px;
+  flex-grow: 1;
 }
