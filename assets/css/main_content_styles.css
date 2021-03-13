@@ -12,7 +12,7 @@
 
 .articles{
   /*flex-basis: 830px; ? Почему это не работает*/
-  max-width: 750px;
+  max-width: 700px;
   overflow: hidden;
 }
 
@@ -21,7 +21,7 @@ article + article{
 }
 
 .article-image{
-  width: 830px;
+  width: 100%;
 }
   
 
@@ -82,6 +82,3 @@ article + article{
 .social-icon-list-item + .social-icon-list-item{
   margin-left: 10px;
 }
-
-
-/*Aside*/

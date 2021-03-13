@@ -17,6 +17,7 @@ aside{
   font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 2px;
+  margin-bottom: 35px;
 }
 .counter{
   color: lightgrey;
@@ -60,12 +61,12 @@ aside{
 .image-title{
   position: absolute;
   top: 0;
-  left: 175px;
+  left: 140px;
 }
 
 .decreased-image{
-  width: 150px;
-  height: 100px;
+  width: 125px;
+  height: 75px;
 }
 
 .subscribe-form{
@@ -74,9 +75,9 @@ aside{
 }
 
 .send-message{
-  background-color: teal;
-  width: 42px;
-  height: 42px;
+  padding-top: 5px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   position: absolute;
   right: 0;
@@ -84,15 +85,22 @@ aside{
   transition: all 1s ease-in-out;
 }
 
-.send-message img{
- padding-top: 10px;
-}
 
 input[type="email"]{
   width: 100%;
   padding: 10px 5px;
+  border: 1px solid lightgrey;
 }
 
-input[type="email"]:hover + .send-message{
+input[type="email"]:focus + .send-message{
   background-color: crimson;
+}
+
+.send-message-image{
+  fill: rgba(255, 0, 0, 0.7);
+  transition: all 3s ease-in-out;
+}
+
+input[type="email"]:focus + .send-message .send-message-image{
+  fill: white;
 }
