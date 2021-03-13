@@ -104,3 +104,10 @@ input[type="email"]:focus + .send-message{
 input[type="email"]:focus + .send-message .send-message-image{
   fill: white;
 }
+
+
+@media (max-width: 954px){
+  aside{
+    margin-left: 0;
+  }
+}

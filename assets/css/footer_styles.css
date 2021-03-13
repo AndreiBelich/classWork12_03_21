@@ -16,10 +16,30 @@
 }
 
 .footer-social-list-item + .footer-social-list-item{
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.footer-social-image{
+  width: 26px;
+  height: 26px;
+}
+
+.footer-social-image-fill{
+  fill: white;
 }
 
 .write-letter a{
   text-decoration: none;
   color: white;
+}
+
+@media (max-width:480px){
+  .footer-content{
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .footer-social-list{
+    margin: 10px 0;
+  }
 }

@@ -82,3 +82,25 @@ article + article{
 .social-icon-list-item + .social-icon-list-item{
   margin-left: 10px;
 }
+
+@media (max-width: 954px){
+  .main-content{
+    flex-direction: column;
+  }
+
+  .articles{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px){
+  .article-footer{
+    flex-direction: column;
+    padding-top: 10px;
+    border: none;
+  }
+
+  .social-icon-list{
+    margin: 20px 0 15px 0;
+  }
+}
