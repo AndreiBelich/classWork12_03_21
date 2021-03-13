@@ -1,17 +1,37 @@
+aside{
+  /*border: 1px solid teal;*/
+  margin-left: 50px;
+  flex-grow: 1;
+}
+
+.categories{
+  background-color: white;
+  padding: 15px;
+}
+
 .sidebar-article-title{
   text-align: center;
-  border: 1px solid orange;
+  border: 2px solid rgb(255, 165, 0);
+  box-shadow: 2px 4px 1px 0px rgba(255, 165, 0, 1);
   padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 .counter{
   color: lightgrey;
+  margin-left: 10px;
+}
+
+.categories-list{
+  margin-top: 20px;
 }
 
 .category-list-item{
   margin-left: 15px;
   position: relative;
   line-height: 1.5;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
 }
 
 .category-list-item + .category-list-item{
@@ -25,3 +45,54 @@
   left: -12px;
 }
 
+.last-writes-list{
+  margin-top: 20px;
+}
+
+.last-writes-list-item{
+  position: relative;
+}
+
+.last-writes-list-item + .last-writes-list-item{
+  margin-top: 15px;
+}
+
+.image-title{
+  position: absolute;
+  top: 0;
+  left: 175px;
+}
+
+.decreased-image{
+  width: 150px;
+  height: 100px;
+}
+
+.subscribe-form{
+  position: relative;
+  margin-top: 15px;
+}
+
+.send-message{
+  background-color: teal;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: all 1s ease-in-out;
+}
+
+.send-message img{
+ padding-top: 10px;
+}
+
+input[type="email"]{
+  width: 100%;
+  padding: 10px 5px;
+}
+
+input[type="email"]:hover + .send-message{
+  background-color: crimson;
+}

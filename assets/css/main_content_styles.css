@@ -1,32 +1,26 @@
 .main-content-wrapper{
   background-color: #F7F7F7;
+  /*background-color: rgb(207, 63, 63);*/
 }
 
 .main-content{
   display: flex;
-  margin-top: 9px;
+  padding-top: 20px;
   justify-content: space-between;
   min-height: 75vh;
 }
 
 .articles{
   /*flex-basis: 830px; ? Почему это не работает*/
-  max-width: 830px;
+  max-width: 750px;
   overflow: hidden;
-  /*flex-grow: 1;*/
 }
 
 article + article{
   margin-top: 50px;
 }
 
-/*.season-image-wrapper{
-  border: 1px solid orange;
-}*/
-
 .article-image{
-  /*object-fit: cover;*/
-  /*width: 100%;*/
   width: 830px;
 }
   
@@ -62,7 +56,7 @@ article + article{
   margin-top: 30px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  padding: 5px 0;
+  padding: 4px 0;
 }
 
 .read-more{
@@ -71,7 +65,7 @@ article + article{
   background-color: rgb(60,61,65);
   color: white;
   font-size: 0.8rem;
-  padding: 10px;
+  padding: 13px 13px 11px 13px;
   clip-path: polygon(0% 0%, 89% 0, 100% 50%, 90% 100%, 0% 100%);
 }
 
@@ -79,11 +73,15 @@ article + article{
   display: flex;
 }
 
+.social-icon-list-item{
+  border: 1px solid orange;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.social-icon-list-item + .social-icon-list-item{
+  margin-left: 10px;
+}
+
 
 /*Aside*/
-aside{
-  border: 1px solid teal;
-  /*flex-basis: 80%;*/
-  margin-left: 50px;
-  flex-grow: 1;
-}

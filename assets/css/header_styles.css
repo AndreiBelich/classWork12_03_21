@@ -18,6 +18,8 @@
 
 .header-logo-letter{
   background-color: orange;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(21, 21, 21, 1);
   padding: 3px;
   text-align: center;
   display: inline-block;
