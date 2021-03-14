@@ -1,3 +1,5 @@
+@import url("./variables.css");
+
 .main-footer{
   background-color: rgb(60,61,65);
   margin-top: 20px;
@@ -7,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: var(--primary-background-color);
   padding: 30px 0;
 }
 
@@ -25,12 +27,12 @@
 }
 
 .footer-social-image-fill{
-  fill: white;
+  fill: var(--primary-background-color);
 }
 
 .write-letter a{
   text-decoration: none;
-  color: white;
+  color: var(--primary-background-color);
 }
 
 @media (max-width:480px){

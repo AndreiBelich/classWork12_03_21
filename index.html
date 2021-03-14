@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Media Query</title>
+    <title>Копия адаптивного сайта</title>
   </head>
   <body>
     <section class="top-header">
@@ -25,7 +25,7 @@
             </label>
             <input id="hidden-checkbox" class="hidden-input" type="checkbox">
             <ul class="header-nav-menu">
-              <li class="header-nav-menu-list-item"><a class="haha" href="#">Блог</a></li>
+              <li class="header-nav-menu-list-item"><a href="#">Блог</a></li>
               <li class="header-nav-menu-list-item">
                 <a href="#">Портфолио</a>
               </li>
@@ -51,15 +51,15 @@
 
     <!--Main content styles-->
     <section class="main-content-wrapper">
-      <main class="main-content wrapper">
+      <main class="wrapper main-content">
         <section class="articles">
-          <article>
+          <article class="main-content-article">
             <div class="season-image-wrapper">
               <img class="article-image" src="./assets/images/spring-image.jpg" alt="Spring" />
             </div>
             <p class="category-style">Дизайн</p>
-            <h2 class="season-title">Весна</h2>
-            <div class="season-content">
+            <h2 class="article-title">Весна</h2>
+            <div class="article-content">
               <p class="content-paragraph">
                 Очень богат русский язык словами, относящимися к временам года и к
                 природным явлениям, с ними связанным.
@@ -101,13 +101,13 @@
           </article>
 
           <!--Article 2-->
-          <article>
+          <article class="main-content-article">
             <div class="season-image-wrapper">
               <img class="article-image" src="./assets/images/summer-image.jpg" alt="Summer" />
             </div>
             <p class="category-style">Верстка</p>
-            <h2 class="season-title">Лето</h2>
-            <div class="season-content">
+            <h2 class="article-title">Лето</h2>
+            <div class="article-content">
               <p class="content-paragraph">
                 С этого лета я навсегда и всем сердцем привязался к Средней
                 России. Я не знаю страны, обладающей такой огромной лирической
@@ -142,13 +142,13 @@
             </footer>
           </article>
           <!--Article 3-->
-          <article>
+          <article class="main-content-article">
             <div class="season-image-wrapper">
               <img class="article-image" src="./assets/images/autumn-image.jpg" alt="Autumn" />
             </div>
             <p class="category-style">Дизайн</p>
-            <h2 class="season-title">Осень</h2>
-            <div class="season-content">
+            <h2 class="article-title">Осень</h2>
+            <div class="article-content">
               <p class="content-paragraph">
                 Невозможно перечислить приметы всех времен года. Поэтому я
                 пропускаю лето и перехожу к осени, к первым ее дням, когда уже
@@ -188,7 +188,7 @@
         </section>
         <!--Aside-->
         <aside class="side-bar">
-          <article class="categories">
+          <article class="side-bar-article">
             <h2 class="sidebar-article-title">Категории</h2>
             <ul class="categories-list">
               <li class="category-list-item"><a href="#">Дизайн <span class="counter">(2)</span></a></li>
@@ -197,7 +197,7 @@
             </ul>
           </article>
 
-          <article class="categories">
+          <article class="side-bar-article">
             <h2 class="sidebar-article-title">Последние записи</h2>
             <ul class="last-writes-list">
               <li class="last-writes-list-item">
@@ -215,7 +215,7 @@
             </ul>
           </article>
 
-          <article class="categories">
+          <article class="side-bar-article">
             <h2 class="sidebar-article-title">Подписка на рассылку</h2>
             <form class="subscribe-form">
               <input type="email" placeholder="Ваш email">

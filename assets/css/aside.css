@@ -1,26 +1,29 @@
-aside{
+@import url("./variables.css");
+
+.side-bar{
   margin-left: 50px;
   flex-grow: 1;
 }
 
-.categories{
-  background-color: white;
+.side-bar-article{
+  background-color: var(--primary-background-color);
   padding: 15px;
   box-shadow: 9px 11px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .sidebar-article-title{
   text-align: center;
-  border: 2px solid rgb(255, 165, 0);
-  box-shadow: 2px 4px 1px 0px rgba(255, 165, 0, 1);
+  border: 2px solid var(--box-shadow-main-color);
+  box-shadow: 2px 4px 1px 0px var(--box-shadow-main-color);
   padding: 20px 0;
   font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 2px;
   margin-bottom: 35px;
 }
+
 .counter{
-  color: lightgrey;
+  color: var(--primary-border-color);
   margin-left: 10px;
 }
 
@@ -36,12 +39,12 @@ aside{
 }
 
 .category-list-item + .category-list-item{
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid var(--primary-border-color);
 }
 
 .category-list-item::before{
   content: ">";
-  color: lightgrey;
+  color: var(--primary-border-color);
   position: absolute;
   left: -12px;
 }
@@ -61,12 +64,12 @@ aside{
 .image-title{
   position: absolute;
   top: 0;
-  left: 140px;
+  left: calc(var(--small-image-width) + 15px);
 }
 
 .decreased-image{
-  width: 125px;
-  height: 75px;
+  width: var(--small-image-width);
+  height: calc(var(--small-image-width) - 50px);
 }
 
 .subscribe-form{
@@ -89,11 +92,11 @@ aside{
 input[type="email"]{
   width: 100%;
   padding: 10px 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--primary-border-color);
 }
 
 input[type="email"]:focus + .send-message{
-  background-color: crimson;
+  background-color: var(--active-icon-color);
 }
 
 .send-message-image{
@@ -102,12 +105,12 @@ input[type="email"]:focus + .send-message{
 }
 
 input[type="email"]:focus + .send-message .send-message-image{
-  fill: white;
+  fill: var(--primary-background-color);
 }
 
 
 @media (max-width: 954px){
-  aside{
+  .side-bar{
     margin-left: 0;
   }
 }

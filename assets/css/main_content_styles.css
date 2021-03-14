@@ -1,5 +1,7 @@
+@import url("./variables.css");
+
 .main-content-wrapper{
-  background-color: #F7F7F7;
+  background-color: rgb(247, 247, 247);
   padding-top: 60px;
 }
 
@@ -16,7 +18,7 @@
   overflow: hidden;
 }
 
-article + article{
+.main-content-article + .main-content-article{
   margin-top: 50px;
 }
 
@@ -26,17 +28,16 @@ article + article{
   
 
 .category-style{
-  color: orange;
+  color: var(--box-shadow-main-color);
   text-transform: uppercase;
   margin: 20px 0;
 }
 
-.season-title{
+.article-title{
   color: rgb(22, 22, 22);
   text-transform: capitalize;
   font-size: 1.8rem;
   font-family: "Times New Roman", serif;
-  font-weight: 200;
   margin-bottom: 10px;
 }
 
@@ -54,8 +55,8 @@ article + article{
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
   padding: 4px 0;
 }
 
@@ -63,7 +64,7 @@ article + article{
   text-decoration: none;
   text-transform: uppercase;
   background-color: rgb(60,61,65);
-  color: white;
+  color: var(--primary-background-color);
   font-size: 0.8rem;
   padding: 13px 13px 11px 13px;
   clip-path: polygon(0% 0%, 89% 0, 100% 50%, 90% 100%, 0% 100%);
@@ -74,7 +75,7 @@ article + article{
 }
 
 .social-icon-list-item{
-  border: 1px solid orange;
+  border: 1px solid var(--box-shadow-main-color);
   padding: 5px;
   border-radius: 50%;
 }
