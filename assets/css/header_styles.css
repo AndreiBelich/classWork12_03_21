@@ -3,6 +3,10 @@
   padding: 15px 0;
   border-bottom: 1px solid lightgrey;
   box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.2);
+  position: fixed;
+  min-width: 100%;
+  min-height: 70px;
+  z-index: 2;
 }
 
 .wrapper{
@@ -15,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .header-logo-letter{
@@ -38,14 +43,13 @@
   margin-left: 2px;
 }
 
-.header-burger-menu{
-  order: 4;
-  /*display: none;*/
+/*custom checkbox*/
+.hidden-input, .checkbox-wrapper{
+  display: none;
 }
 
-.burger-menu{
-  width: 30px;
-  height: 30px;
+.custom-checkbox{
+  display: none;
 }
 
 .header-nav-menu{
@@ -62,12 +66,26 @@
   margin-left: 15px;
 }
 
+.search-form{
+  position: relative;
+}
+
+.search-icon-wrapper{
+  position: absolute;
+  top: 8px;
+  right: 0;
+  z-index: 1;
+}
+
 .search-button{
   outline: none;
   border: none;
-  background-color: rgba(245, 230, 230, 0.6);
-  padding: 5px;
+  padding: 8px 5px;
   position: relative;
+}
+
+.search-button:hover{
+  border: 1px solid rgba(245, 230, 230, 0.8);
 }
 
 .search-button::-webkit-input-placeholder{
@@ -84,11 +102,63 @@
 
 @media (max-width: 954px){
   .nav-menu{
+    order: 3;
+  }
+
+  .header-nav-menu{
     display: none;
   }
 
-  .header-burger-menu{
+  .checkbox-wrapper{
     display: block;
   }
 
+  input[type="checkbox"]:checked + .header-nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  .header-nav-menu-list-item{
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-nav-menu-list-item > a{
+    padding: 10px 0;
+    display: block;
+    transition: 1s all ease-in-out;
+  }
+
+  .header-nav-menu-list-item > a:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .header-nav-menu-list-item + .header-nav-menu-list-item{
+    border-top: 1px solid teal;
+    
+  }
+}
+
+@media (max-width: 381px){
+  .top-header{
+    background-color: crimson;
+  }
+
+  .header-logo{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  input[type="checkbox"]:checked + .header-nav-menu{
+    top: 74px;
+  }
 }

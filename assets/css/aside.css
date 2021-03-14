@@ -1,5 +1,4 @@
 aside{
-  /*border: 1px solid teal;*/
   margin-left: 50px;
   flex-grow: 1;
 }
@@ -7,6 +6,7 @@ aside{
 .categories{
   background-color: white;
   padding: 15px;
+  box-shadow: 9px 11px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .sidebar-article-title{

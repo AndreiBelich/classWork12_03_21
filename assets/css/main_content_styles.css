@@ -1,6 +1,6 @@
 .main-content-wrapper{
   background-color: #F7F7F7;
-  /*background-color: rgb(207, 63, 63);*/
+  padding-top: 60px;
 }
 
 .main-content{
@@ -102,5 +102,11 @@ article + article{
 
   .social-icon-list{
     margin: 20px 0 15px 0;
+  }
+}
+
+@media (max-width: 381px){
+  .main-content-wrapper{
+    padding-top: 70px;
   }
 }
