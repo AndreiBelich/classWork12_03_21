@@ -11,6 +11,10 @@
   box-shadow: 9px 11px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
+.side-bar-article + .side-bar-article{
+  margin-top: 45px;
+}
+
 .sidebar-article-title{
   text-align: center;
   border: 2px solid var(--box-shadow-main-color);
